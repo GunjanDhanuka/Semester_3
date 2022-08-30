@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage{amsmath}
+%using setspace package to create spacing between equations
+\usepackage{setspace}
+\onehalfspacing
+\begin{document}
+    % Using gather to keep all the equations aligned centrally
+    %* to avoid the numbering of equations  
+    \begin{gather*}
+        %1
+        \iiint \limits_V f(x,y,z)\, dV = F\\
+        \frac{dx}{dy} = x' = \lim_{h \to 0}\frac{f\left(x+h\right)-f\left(x\right)}{h}\\ 
+        %2
+        |x| =
+        \begin{cases}
+            -x,& \text{if }x < 0\\
+            x,& \text{if }x\geq 0
+        \end{cases}\\
+        %3
+        F(x) = A_0 + \sum\limits_{n=1}\limits^N \left[A_n \cos\left(\frac{2\pi nx}{P}\right) + B_n \sin\left(\frac{2\pi nx}{P}\right)\right]\\
+        \sum \limits_n \frac{1}{n^s} = \prod \limits_p \frac{1}{1 - \frac{1}{p^s}}\\
+        m\ddot{x} + c\dot{x} + kx = F_0 \sin(2\pi ft)\\
+        %4
+        \begin{split}
+            f(x) &= x^2 + 3x + 5x^2 + 8 + 6x\\
+            &= 6x^2 + 9x + 8\\
+            &= x(6x+9) + 8
+        \end{split}\\
+        %5
+        X = \frac{F_0}{k} \frac{1}{\sqrt{(1+r^2)^2 + (2\zeta r)^2}}\\
+        %6
+        G_{\mu\nu} \equiv R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}\\
+        %7
+        \mathrm{6CO_2 + 6H_2O \rightarrow C_6H_{12}O_6 + 6O_2}\\
+        %8
+        \mathrm{SO^{2-}_4 + Ba^{2+} \rightarrow BaSO_4}\\
+        %9
+        \begin{pmatrix}
+            a_{11}&&a_{12}&&\dots&&a_{1n}\\
+            a_{21}&&a_{22}&&\dots&&a_{2n}\\
+            \vdots&&\vdots&&\ddots&&\vdots\\
+            a_{n1}&&a_{n2}&&\dots&&a_{nn}\\
+        \end{pmatrix}
+        \begin{pmatrix}
+            v_1\\v_2\\\vdots\\v_n
+        \end{pmatrix}
+        =
+        \begin{pmatrix}
+            w_1\\w_2\\\vdots\\w_n
+        \end{pmatrix}\\
+        %10
+        \frac{\partial\textbf{u}}{\partial t} + (\textbf{u} \cdot \nabla)\textbf{u} - \nu\nabla^2(\textbf{u}) = -\nabla\textbf{h}\\
+        %11
+        \alpha A\beta B\gamma\Gamma\delta\Delta\pi\Pi\omega\Omega\\
+    \end{gather*} 
+\end{document}

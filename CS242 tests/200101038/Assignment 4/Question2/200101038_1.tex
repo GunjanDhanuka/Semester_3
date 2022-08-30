@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage{amsmath}
+%using hyperref package to create links as visible in the image
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor= blue, urlcolor=blue, citecolor=blue}
+\title{Hello World!}
+\author{Gunjan Dhanuka}
+\date{November 15, 2021}
+\begin{document}
+    \maketitle %renders the title
+    \thispagestyle{empty}
+    \section{Getting Started}
+    
+        \textbf{Hello World!} Today I am learning \LaTeX. \LaTeX{} is a great program
+        for writing math. I can write in line math such as $a^2 + b^2 = c^2$. I can also give
+        equations their own space:
+        
+        \begin{equation}
+        \gamma^2+\theta^2=\omega^2
+        \end{equation}
+
+        ``Maxwell's equations'' are named for James Clark Maxwell and are as follow:
+        \begin{align} %Using align to align equations by the equal sign and the text
+            %LHS
+            \vec{\nabla} \cdot \vec{E} \quad&=
+            %RHS 
+            \quad\frac{\rho}{\epsilon_0}&&\text{Gauss's Law}\label{eq: GL}\\
+            %LHS
+            \vec{\nabla} \cdot \vec{B} \quad&=
+            %RHS
+            \quad0&&\text{Gauss's Law for Magnetism}\label{eq: GLM}\\
+            %LHS
+            \vec{\nabla} \times \vec{E} \quad&= 
+            %RHS
+            \quad-\frac{\partial\vec{B}}{\partial t}&&\text{Faraday's Law of Induction}\label{eq: FLI}\\
+            %LHS
+            \vec{\nabla} \times \vec{B} \quad&=
+            %RHS
+            \quad \mu_0\left(\epsilon_0\frac{\partial\vec{E}}{\partial t}+\vec{J}\right)&&\text{Ampere's Circuital Law}\label{eq: AL}
+        \end{align}
+        Equations \ref{eq: GL}, \ref{eq: GLM}, \ref{eq: FLI} and \ref{eq: AL} are some of the most important in Physics.
+    
+    \section{What about Matrix Equations?}
+        \begin{equation*}
+            \begin{pmatrix}
+                a_{11}&&a_{12}&&\dots&&a_{1n}\\
+                a_{21}&&a_{22}&&\dots&&a_{2n}\\
+                \vdots&&\vdots&&\ddots&&\vdots\\
+                a_{n1}&&a_{n2}&&\dots&&a_{nn}
+            \end{pmatrix}
+            \begin{bmatrix}
+                v_1\\v_2\\\vdots\\v_n
+            \end{bmatrix}
+            =
+            \begin{matrix}
+                w_1\\w_2\\\vdots\\w_n
+            \end{matrix}
+        \end{equation*}
+\end{document}
